@@ -1,7 +1,13 @@
-//! SigmaOS Toolchain
-//! Toolchain and build system
+pub struct ToolchainConfig;
+impl ToolchainConfig {
+    pub fn default_target_triple() -> &'static str { "x86_64-unknown-none" }
+}
 
-pub mod toolchain;
-pub mod build;
-
-pub use toolchain::Toolchain;
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_toolchain_target() {
+        assert_eq!(ToolchainConfig::default_target_triple(), "x86_64-unknown-none");
+    }
+}

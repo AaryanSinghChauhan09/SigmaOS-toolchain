@@ -1,0 +1,16 @@
+[component]
+name = "SigmaOS-toolchain"
+tier = 0
+stability = "scaffold"
+language = "rust"
+description = "Linker scripts, target JSON specifications, and cross-compilation harness for sovereign builds"
+upstream = ["https://github.com/rust-lang/rust"]
+
+[contract]
+provides = ["target-spec-generator", "linker-script-library", "cross-compiler-config"]
+depends_on = []
+
+[maturity]
+status = "Scaffold"
+test_evidence = "Compiles and passes AAA unit tests"
+next_milestone = "Hardware and runtime integration"

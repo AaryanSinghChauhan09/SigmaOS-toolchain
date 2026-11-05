@@ -1,17 +1,9 @@
 [package]
-name = "sigmaos-toolchain"
+name = "sigmaos_toolchain"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "Toolchain and build system"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-toolchain"
-readme = "README.md"
-keywords = ["toolchain", "build", "compiler"]
-categories = ["development-tools"]
+description = "Linker scripts, target JSON specifications, and cross-compilation harness for sovereign builds"
 
-[dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_toolchain"
+path = "src/lib.rs"
