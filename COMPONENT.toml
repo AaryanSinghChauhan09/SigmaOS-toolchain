@@ -3,7 +3,7 @@ name = "SigmaOS-toolchain"
 tier = 0
 stability = "scaffold"
 language = "rust"
-description = "Linker scripts, target JSON specifications, and cross-compilation harness for sovereign builds"
+description = "GitHub description is a placeholder; component scope remains unclassified."
 upstream = ["https://github.com/rust-lang/rust"]
 
 [contract]
